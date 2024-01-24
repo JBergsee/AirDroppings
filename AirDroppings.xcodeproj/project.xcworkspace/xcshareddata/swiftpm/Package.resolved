@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "logging",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JBergsee/Logging.git",
+      "state" : {
+        "revision" : "18a78a562913794d9bdb8bb57625ef3c44781285",
+        "version" : "0.1.3"
+      }
+    }
+  ],
+  "version" : 2
+}

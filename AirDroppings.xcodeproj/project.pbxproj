@@ -8,22 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		043C75952B60636C000C7337 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C75942B60636C000C7337 /* AppDelegate.swift */; };
-		043C75972B60636C000C7337 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C75962B60636C000C7337 /* SceneDelegate.swift */; };
-		043C75992B60636C000C7337 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C75982B60636C000C7337 /* ViewController.swift */; };
+		043C75992B60636C000C7337 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C75982B60636C000C7337 /* MainMenuViewController.swift */; };
 		043C759C2B60636C000C7337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C759A2B60636C000C7337 /* Main.storyboard */; };
 		043C759E2B606370000C7337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043C759D2B606370000C7337 /* Assets.xcassets */; };
 		043C75A12B606370000C7337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C759F2B606370000C7337 /* LaunchScreen.storyboard */; };
+		043C75A92B60641A000C7337 /* URLReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C75A82B60641A000C7337 /* URLReceiver.swift */; };
+		043C75AC2B606600000C7337 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 043C75AB2B606600000C7337 /* Logging */; };
+		043C75AE2B606644000C7337 /* LogCategory+URLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C75AD2B606644000C7337 /* LogCategory+URLScheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		043C75912B60636C000C7337 /* AirDroppings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirDroppings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043C75942B60636C000C7337 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		043C75962B60636C000C7337 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		043C75982B60636C000C7337 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		043C75982B60636C000C7337 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		043C759B2B60636C000C7337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		043C759D2B606370000C7337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043C75A02B606370000C7337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043C75A22B606370000C7337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043C75A82B60641A000C7337 /* URLReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLReceiver.swift; sourceTree = "<group>"; };
+		043C75AD2B606644000C7337 /* LogCategory+URLScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogCategory+URLScheme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043C75AC2B606600000C7337 /* Logging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,8 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				043C75942B60636C000C7337 /* AppDelegate.swift */,
-				043C75962B60636C000C7337 /* SceneDelegate.swift */,
-				043C75982B60636C000C7337 /* ViewController.swift */,
+				043C75A82B60641A000C7337 /* URLReceiver.swift */,
+				043C75AD2B606644000C7337 /* LogCategory+URLScheme.swift */,
+				043C75982B60636C000C7337 /* MainMenuViewController.swift */,
 				043C759A2B60636C000C7337 /* Main.storyboard */,
 				043C759D2B606370000C7337 /* Assets.xcassets */,
 				043C759F2B606370000C7337 /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = AirDroppings;
+			packageProductDependencies = (
+				043C75AB2B606600000C7337 /* Logging */,
+			);
 			productName = AirDroppings;
 			productReference = 043C75912B60636C000C7337 /* AirDroppings.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 043C75882B60636C000C7337;
+			packageReferences = (
+				043C75AA2B606600000C7337 /* XCRemoteSwiftPackageReference "Logging" */,
+			);
 			productRefGroup = 043C75922B60636C000C7337 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043C75992B60636C000C7337 /* ViewController.swift in Sources */,
+				043C75A92B60641A000C7337 /* URLReceiver.swift in Sources */,
+				043C75AE2B606644000C7337 /* LogCategory+URLScheme.swift in Sources */,
+				043C75992B60636C000C7337 /* MainMenuViewController.swift in Sources */,
 				043C75952B60636C000C7337 /* AppDelegate.swift in Sources */,
-				043C75972B60636C000C7337 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		043C75AA2B606600000C7337 /* XCRemoteSwiftPackageReference "Logging" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JBergsee/Logging.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		043C75AB2B606600000C7337 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 043C75AA2B606600000C7337 /* XCRemoteSwiftPackageReference "Logging" */;
+			productName = Logging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 043C75892B60636C000C7337 /* Project object */;
 }

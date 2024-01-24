@@ -2,24 +2,143 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIApplicationSceneManifest</key>
-	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
-		<key>UISceneConfigurations</key>
+	<key>CFBundleDocumentTypes</key>
+	<array>
 		<dict>
-			<key>UIWindowSceneSessionRoleApplication</key>
+			<key>CFBundleIconFiles</key>
 			<array>
-				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>Default Configuration</string>
-					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
-				</dict>
+				<string>AirdropIcon_320.png</string>
+				<string>AirdropIcon_64.png</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>FlightBriefing Pilotinput</string>
+			<key>LSHandlerRank</key>
+			<string>Default</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.jnavionics.FlightBriefing.pltinp</string>
 			</array>
 		</dict>
-	</dict>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>AirdropIcon_64.png</string>
+				<string>AirdropIcon_320.png</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>FlightBriefing Package</string>
+			<key>LSHandlerRank</key>
+			<string>Default</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.jnavionics.FlightBriefing.fltpkg</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>AirdropIcon_64.png</string>
+				<string>AirdropIcon_320.png</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>FlightBriefing completed flight</string>
+			<key>LSHandlerRank</key>
+			<string>Default</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.jnavionics.FlightBriefing.flt</string>
+			</array>
+		</dict>
+	</array>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+				<string>public.content</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>FlightBriefing Pilot Input</string>
+			<key>UTTypeIconFiles</key>
+			<array/>
+			<key>UTTypeIdentifier</key>
+			<string>com.jnavionics.FlightBriefing.pltinp</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>pltinp</string>
+				</array>
+				<key>public.mime-type</key>
+				<array>
+					<string>application/flightbriefing</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+				<string>public.content</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>FlightBriefing Package</string>
+			<key>UTTypeIconFiles</key>
+			<array/>
+			<key>UTTypeIdentifier</key>
+			<string>com.jnavionics.FlightBriefing.fltpkg</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>fltpkg</string>
+				</array>
+				<key>public.mime-type</key>
+				<array>
+					<string>application/flightbriefing</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+				<string>public.content</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Completed Flight</string>
+			<key>UTTypeIconFiles</key>
+			<array/>
+			<key>UTTypeIdentifier</key>
+			<string>com.jnavionics.FlightBriefing.flt</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>flt</string>
+				</array>
+				<key>public.mime-type</key>
+				<array>
+					<string>application/flightbriefing</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.jnavionics.flightbriefing</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>flightbriefing</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
 </dict>
 </plist>
